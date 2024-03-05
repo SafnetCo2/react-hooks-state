@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
-function Counter() {
+const Counter = () => {
   const [count, setCount] = useState(0);
-
-  function increment() {
-    setCount(count + 1);
+  const increment = () => {
+    setCount(count + 1)
+    
   }
-
-  return <button onClick={increment}>I have been clicked {count} times</button>;
+  return (
+    <button onClick={increment}>As you click there is an increment of a number{count}</button>
+  )
 }
-
-export default Counter;
+export default Counter
